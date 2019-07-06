@@ -1,0 +1,89 @@
+<html>
+
+<body style="background: #fafafa">
+
+    <div style="display: flex; height: 100%; width: 100%; background: #fafafa; ">
+
+        <div style="margin-left: 438px; margin-top: 158px; width: 25%; position: absolute;z-index: 1;">
+            <img class="Slider_auto" src="Img1.jpg" style="width: 193px; height: 343px">
+            <img class="Slider_auto" src="Img2.jpg" style="width: 193px; height: 343px">
+            <img class="Slider_auto" src="Img3.jpg" style="width: 193px; height: 343px">
+            <img class="Slider_auto" src="Img4.jpg" style="width: 193px; height: 343px">
+            <img class="Slider_auto" src="Img5.jpg" style="width: 193px; height: 343px">
+        </div>
+        <div style="height: 100%; width: 25%; margin-left: 350px; margin-top: 90px;">
+            <img src="Img_Back.jpg" alt="">
+        </div>
+        <div
+            style="background: white; border: solid rgb(190, 189, 189); border-width: 1px; height: 420px; width: 300px; margin-top: 40px;">
+            <img src="Logo.JPG" alt="" style="margin-top: 12px; margin-left: 70px">
+            <div style="text-align: center; color:grey">
+                Sign up to see photos and videos <br>from your friends.
+            </div>
+            <button style="height: 28px; border-radius: 10px ;width: 200px; margin-left: 
+                    45px; margin-top: 10px;background: rgb(90, 125, 221); color: white">
+                <img src="Fb_logo.jpg" style="height: 15px; width: 15px; margin-right: 5px; margin-top: 3px">Log in with
+                Facebook</button>
+            <div style="font-size: 12px; color: grey; margin-top: 10px; margin-left: 130px">
+                OR
+            </div>
+            <div>
+                <input placeholder="  Mobile number or Email"
+                    style="margin-left: 45px; background: rgb(230, 225, 225); border-radius: 5px; height: 30px; width: 200px; margin-top: 5px; font-size: 10px" /><br>
+                <input placeholder="  Full name"
+                    style="margin-left: 45px; background: rgb(230, 225, 225); border-radius: 5px; height: 30px; width: 200px; margin-top: 5px; font-size: 10px" /><br>
+                <input placeholder="  Username"
+                    style="margin-left: 45px; background: rgb(230, 225, 225); border-radius: 5px; height: 30px; width: 200px; margin-top: 5px; font-size: 10px" /><br>
+                <input placeholder="  Password" type="password"
+                    style="margin-left: 45px; background: rgb(230, 225, 225); border-radius: 5px; height: 30px; width: 200px; margin-top: 5px; font-size: 10px" /><br>
+                <button style="height: 28px; border-radius: 10px ;width: 200px; margin-left: 
+                    45px; margin-top: 10px;background: rgb(90, 125, 221); color: white">
+                    Sign Up</button>
+                <div style="text-align: center; color:grey; font-size: 12px">
+                    <br>By signing up, you agree to our <br><a href=Insta.html
+                        style="text-decoration: none; color: grey; font-weight: bold"> Terms, Data Policy</a> and <a
+                        href=Insta.html style="text-decoration: none; color: grey; font-weight: bold">Cookies
+                        <br>Policy.</a>
+                </div>
+            </div>
+
+            <div
+                style="width: 300px; font-size: 12px;height: 35px; padding-top: 15px;background: white; border: solid rgb(190, 189, 189); border-width: 1px; margin-top: 30px; text-align: center">
+                Have an account? <a href=Insta.html
+                    style="text-decoration: none; color: rgb(113, 24, 230); font-weight: bold">Log in</a>
+            </div>
+            <div style="font-size: 15px; margin-top: 20px;width: 300px; height: 200px; text-align: center">
+                Get the app.<br><br>
+                <a href=Insta.html>
+                    <img src="App_iOS.png" alt="" style="height: 28px; width: 125px">
+                    <img src="App_android.png" alt="" style="height: 28px; width: 125px">
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div style="font-size: 11px ;padding-top: 20px;padding-left: 300px ;height: 50px; width: 50%; background: #fafafa">
+        <a href=Insta.html style="text-decoration: none; color: rgb(53, 62, 117); font-weight: bold">
+            <pre>ABOUT US  SUPPORT  PRESS  API  JOBS  PRIVACY  TERMS  DIRECTORY  PROFILES  HASHTAGS  LANGUAGE</pre></a>
+    </div>
+
+    <script>
+        var k = 0;
+        Auto_Slider();
+
+        function Auto_Slider() {
+            var i;
+            var x = document.getElementsByClassName("Slider_auto");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            k++;
+            if (k > x.length) { k = 1 }
+            x[k - 1].style.display = "block";
+            setTimeout(Auto_Slider, 3000);
+        }
+    </script>
+
+</body>
+
+</html>
